@@ -9,3 +9,44 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Usuario {
+  id Int @id @default(autoincrement())
+  nombres String
+  apellidos String
+  login String
+  password String
+}
+
+model Cliente {
+  id Int @id @default(autoincrement())
+  nombres String
+  apellidos String
+  email String
+  password String
+}
+
+model Categoria {
+  id Int @id @default(autoincrement())
+  nombre String
+}
+
+// model Producto {
+//   id Int @id @default(autoincrement())
+//   nombre String
+//   descripcion String
+//   precio Decimal
+// }
+
+model Publicacion {
+  id Int @id @default(autoincrement())
+  nombre String
+  descripcion String
+  fecha DateTime
+  estado String
+}
+
+model Foto {
+  id Int @id @default(autoincrement())
+  ruta String
+}
