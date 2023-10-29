@@ -7,8 +7,10 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url = env("DB_PRISMA_URL") // uses connection pooling
+  directUrl = env("DB_URL_NON_POOLING") // uses a direct connection
 }
+
 
 model Usuario {
   id Int @id @default(autoincrement())
@@ -24,6 +26,8 @@ model Cliente {
   apellidos String
   email String
   password String
+  publicaciones Publicacion[] @relation(name: "vendedor")
+  compras Publicacion[] @relation(name: "comprador")
 }
 
 model Categoria {
@@ -31,20 +35,26 @@ model Categoria {
   nombre String
 }
 
-// model Producto {
-//   id Int @id @default(autoincrement())
-//   nombre String
-//   descripcion String
-//   precio Decimal
-// }
+model Estado {
+  id Int @id @default(autoincrement())
+  nombre String
+  descripcion String
+  publicaciones Publicacion[]
+  
+}
 
 model Publicacion {
   id Int @id @default(autoincrement())
   producto String
-  descripcion String
-  fechaPublicacion DateTime
-  fechaVenta DateTime
-  estado String
+  descripcion String?
+  fechaPublicacion DateTime @default(now()) @map(name: "fecha_publicacion")
+  fechaVenta DateTime?
+  estado Estado @relation(fields: [estadoId], references: [id])
+  estadoId Int
+  vendedor Cliente @relation(fields: [vendedorId], references: [id], name: "vendedor")
+  vendedorId Int
+  comprador Cliente? @relation(fields: [compradorId], references: [id], name: "comprador")
+  compradorId Int
 }
 
 model Foto {
