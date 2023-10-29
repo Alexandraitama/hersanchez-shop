@@ -40,9 +40,10 @@ model Categoria {
 
 model Publicacion {
   id Int @id @default(autoincrement())
-  nombre String
+  producto String
   descripcion String
-  fecha DateTime
+  fechaPublicacion DateTime
+  fechaVenta DateTime
   estado String
 }
 
