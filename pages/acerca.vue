@@ -2,7 +2,11 @@
 
 <template>
   <div>
-    Page: acerca
+    autores:<br />
+    Maira Itama
+    <br />
+    Simon Sanchez
+    <br />
     <nuxt-link to="/">Go back to index</nuxt-link>
   </div>
 </template>
