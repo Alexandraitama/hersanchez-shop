@@ -6,7 +6,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
-                    <img src="~/public/assets/images/products/product1.jpg" alt="product 1" class="w-full">
+                    <img src="/images/products/product1.jpg" alt="product 1" class="w-full">
                     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="#"
@@ -47,7 +47,7 @@
             </div>
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
-                    <img src="~/public/assets/images/products/product4.jpg" alt="product 1" class="w-full">
+                    <img src="/images/products/product4.jpg" alt="product 1" class="w-full">
                     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="#"
@@ -88,7 +88,7 @@
             </div>
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
-                    <img src="~/public/assets/images/products/product2.jpg" alt="product 1" class="w-full">
+                    <img src="/images/products/product2.jpg" alt="product 1" class="w-full">
                     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="#"
@@ -129,7 +129,7 @@
             </div>
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
-                    <img src="~/public/assets/images/products/product3.jpg" alt="product 1" class="w-full">
+                    <img src="/images/products/product3.jpg" alt="product 1" class="w-full">
                     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="#"
@@ -170,7 +170,7 @@
             </div>
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
-                    <img src="~/public/assets/images/products/product1.jpg" alt="product 1" class="w-full">
+                    <img src="/images/products/product1.jpg" alt="product 1" class="w-full">
                     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="#"
@@ -211,7 +211,7 @@
             </div>
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
-                    <img src="~/public/assets/images/products/product4.jpg" alt="product 1" class="w-full">
+                    <img src="/images/products/product4.jpg" alt="product 1" class="w-full">
                     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="#"
@@ -252,7 +252,7 @@
             </div>
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
-                    <img src="~/public/assets/images/products/product2.jpg" alt="product 1" class="w-full">
+                    <img src="/images/products/product2.jpg" alt="product 1" class="w-full">
                     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="#"
@@ -293,7 +293,7 @@
             </div>
             <div class="bg-white shadow rounded overflow-hidden group">
                 <div class="relative">
-                    <img src="~/public/assets/images/products/product3.jpg" alt="product 1" class="w-full">
+                    <img src="/images/products/product3.jpg" alt="product 1" class="w-full">
                     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center 
                     justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="#"
