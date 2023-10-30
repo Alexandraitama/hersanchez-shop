@@ -16,7 +16,7 @@ model Usuario {
   id Int @id @default(autoincrement())
   nombres String
   apellidos String
-  login String
+  login String @unique
   password String
 }
 
@@ -24,7 +24,7 @@ model Cliente {
   id Int @id @default(autoincrement())
   nombres String
   apellidos String
-  email String
+  email String @unique
   password String
   publicaciones Publicacion[] @relation(name: "vendedor")
   compras Publicacion[] @relation(name: "comprador")
@@ -32,12 +32,13 @@ model Cliente {
 
 model Categoria {
   id Int @id @default(autoincrement())
-  nombre String
+  nombre String @unique
+  publicaciones Publicacion[]
 }
 
 model Estado {
   id Int @id @default(autoincrement())
-  nombre String
+  nombre String @unique
   descripcion String
   publicaciones Publicacion[]
   
@@ -47,17 +48,20 @@ model Publicacion {
   id Int @id @default(autoincrement())
   producto String
   descripcion String?
-  fechaPublicacion DateTime @default(now()) @map(name: "fecha_publicacion")
+  fechaPublicacion DateTime @default(now())
   fechaVenta DateTime?
   estado Estado @relation(fields: [estadoId], references: [id])
   estadoId Int
+  categoria Categoria @relation(fields: [categoriaId], references: [id])
+  categoriaId Int
   vendedor Cliente @relation(fields: [vendedorId], references: [id], name: "vendedor")
   vendedorId Int
   comprador Cliente? @relation(fields: [compradorId], references: [id], name: "comprador")
-  compradorId Int
+  compradorId Int?
+  precio Decimal
 }
 
 model Foto {
   id Int @id @default(autoincrement())
-  ruta String
+  ruta String @unique
 }
