@@ -14,7 +14,7 @@
       <header class="py-4 shadow-sm bg-white">
         <div class="container flex items-center justify-between">
             <a href="index.html">
-                <img src="//images/logo.png" alt="Logo" class="w-32">
+                <img src="images/logo.png" alt="Logo" class="w-32">
             </a>
 
             <div class="w-full max-w-xl relative flex">
@@ -23,13 +23,13 @@
                 </span>
                 <input type="text" name="search" id="search"
                     class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none hidden md:flex"
-                    placeholder="search">
+                    placeholder="Buscar">
                 <button
                     class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex">Search</button>
             </div>
 
             <div class="flex items-center space-x-4">
-                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                <!-- <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
                     <div class="text-2xl">
                         <i class="fa-regular fa-heart"></i>
                     </div>
@@ -37,12 +37,12 @@
                     <div
                         class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
                         8</div>
-                </a>
+                </a> -->
                 <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
                     <div class="text-2xl">
                         <i class="fa-solid fa-bag-shopping"></i>
                     </div>
-                    <div class="text-xs leading-3">Cart</div>
+                    <div class="text-xs leading-3">Carrito</div>
                     <div
                         class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
                         2</div>
@@ -51,7 +51,7 @@
                     <div class="text-2xl">
                         <i class="fa-regular fa-user"></i>
                     </div>
-                    <div class="text-xs leading-3">Account</div>
+                    <div class="text-xs leading-3">Cuenta</div>
                 </a>
             </div>
         </div>
@@ -99,10 +99,10 @@
 
             <div class="flex items-center justify-between flex-grow md:pl-12 py-5">
                 <div class="flex items-center space-x-6 capitalize">
-                    <a href="index.html" class="text-gray-200 hover:text-white transition">Home</a>
-                    <a href="pages/shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
-                    <a href="#" class="text-gray-200 hover:text-white transition">About us</a>
-                    <a href="#" class="text-gray-200 hover:text-white transition">Contact us</a>
+                    <nuxt-link to="/" class="text-gray-200 hover:text-white transition">Inicio</nuxt-link>
+                    <nuxt-link to="/categorias" class="text-gray-200 hover:text-white transition">Comprar</nuxt-link>
+                    <nuxt-link to="/acerca" class="text-gray-200 hover:text-white transition">Acerca de</nuxt-link>
+                    <nuxt-link to="/contacto" class="text-gray-200 hover:text-white transition">Contacto</nuxt-link>
                 </div>
                 <a href="pages/login.html" class="text-gray-200 hover:text-white transition">Login</a>
             </div>
@@ -111,24 +111,11 @@
     <!-- ./navbar -->
 
     <!-- banner -->
-    <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url('/images/banner-bg.jpg');">
-        <div class="container">
-            <h1 class="text-6xl text-gray-800 font-medium mb-4 capitalize">
-                best collection for <br> home decoration
-            </h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam <br>
-                accusantium perspiciatis, sapiente
-                magni eos dolorum ex quos dolores odio</p>
-            <div class="mt-12">
-                <a href="#" class="bg-primary border border-primary text-white px-8 py-3 font-medium 
-                    rounded-md hover:bg-transparent hover:text-primary">Shop Now</a>
-            </div>
-        </div>
-    </div>
+    
     <!-- ./banner -->
 
     <!-- features -->
-    <div class="container py-16">
+    <!-- <div class="container py-16">
         <div class="w-10/12 grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto justify-center">
             <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
                 <img src="assets/icons/delivery-van.svg" alt="Delivery" class="w-12 h-12 object-contain">
@@ -152,61 +139,25 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- ./features -->
 
     <!-- categories -->
-    <div class="container py-16">
-        <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">shop by category</h2>
-        <div class="grid grid-cols-3 gap-3">
-            <div class="relative rounded-sm overflow-hidden group">
-                <img src="/images/category/category-1.jpg" alt="category 1" class="w-full">
-                <a href="#"
-                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Bedroom</a>
-            </div>
-            <div class="relative rounded-sm overflow-hidden group">
-                <img src="/images/category/category-2.jpg" alt="category 1" class="w-full">
-                <a href="#"
-                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Mattrass</a>
-            </div>
-            <div class="relative rounded-sm overflow-hidden group">
-                <img src="/images/category/category-3.jpg" alt="category 1" class="w-full">
-                <a href="#"
-                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Outdoor
-                </a>
-            </div>
-            <div class="relative rounded-sm overflow-hidden group">
-                <img src="/images/category/category-4.jpg" alt="category 1" class="w-full">
-                <a href="#"
-                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Sofa</a>
-            </div>
-            <div class="relative rounded-sm overflow-hidden group">
-                <img src="/images/category/category-5.jpg" alt="category 1" class="w-full">
-                <a href="#"
-                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Living
-                    Room</a>
-            </div>
-            <div class="relative rounded-sm overflow-hidden group">
-                <img src="/images/category/category-6.jpg" alt="category 1" class="w-full">
-                <a href="#"
-                    class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Kitchen</a>
-            </div>
-        </div>
-    </div>
+    <!-- <categorias-component /> -->
     <!-- ./categories -->
 <div>
   <slot />
 </div>
     <!-- new arrival -->
-    <novedades-component />
+    <!-- <novedades-component /> -->
     <!-- ./new arrival -->
 
     <!-- ads -->
-    <anuncios-component />
+    <!-- <anuncios-component /> -->
     <!-- ./ads -->
 
     <!-- product -->
-    <productos-component />
+    <!-- <productos-component /> -->
     <!-- ./product -->
 
    
