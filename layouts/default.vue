@@ -14,7 +14,7 @@
       <header class="py-4 shadow-sm bg-white">
         <div class="container flex items-center justify-between">
             <a href="index.html">
-                <img src="assets/images/logo.svg" alt="Logo" class="w-32">
+                <img src="//images/logo.png" alt="Logo" class="w-32">
             </a>
 
             <div class="w-full max-w-xl relative flex">
@@ -71,27 +71,27 @@
                 <div
                     class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/images/icons/sofa.svg" alt="sofa" class="w-5 h-5 object-contain">
+                        <img src="assets/icons/sofa.svg" alt="sofa" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Sofa</span>
                     </a>
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/images/icons/terrace.svg" alt="terrace" class="w-5 h-5 object-contain">
+                        <img src="assets/icons/terrace.svg" alt="terrace" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Terarce</span>
                     </a>
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/images/icons/bed.svg" alt="bed" class="w-5 h-5 object-contain">
+                        <img src="assets/icons/bed.svg" alt="bed" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Bed</span>
                     </a>
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/images/icons/office.svg" alt="office" class="w-5 h-5 object-contain">
+                        <img src="assets/icons/office.svg" alt="office" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">office</span>
                     </a>
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/images/icons/outdoor-cafe.svg" alt="outdoor" class="w-5 h-5 object-contain">
+                        <img src="assets/icons/outdoor-cafe.svg" alt="outdoor" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
                     </a>
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/images/icons/bed-2.svg" alt="Mattress" class="w-5 h-5 object-contain">
+                        <img src="assets/icons/bed-2.svg" alt="Mattress" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Mattress</span>
                     </a>
                 </div>
@@ -111,7 +111,7 @@
     <!-- ./navbar -->
 
     <!-- banner -->
-    <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url('assets/images/banner-bg.jpg');">
+    <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url('/images/banner-bg.jpg');">
         <div class="container">
             <h1 class="text-6xl text-gray-800 font-medium mb-4 capitalize">
                 best collection for <br> home decoration
@@ -131,21 +131,21 @@
     <div class="container py-16">
         <div class="w-10/12 grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto justify-center">
             <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
-                <img src="assets/images/icons/delivery-van.svg" alt="Delivery" class="w-12 h-12 object-contain">
+                <img src="assets/icons/delivery-van.svg" alt="Delivery" class="w-12 h-12 object-contain">
                 <div>
                     <h4 class="font-medium capitalize text-lg">Free Shipping</h4>
                     <p class="text-gray-500 text-sm">Order over $200</p>
                 </div>
             </div>
             <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
-                <img src="assets/images/icons/money-back.svg" alt="Delivery" class="w-12 h-12 object-contain">
+                <img src="assets/icons/money-back.svg" alt="Delivery" class="w-12 h-12 object-contain">
                 <div>
                     <h4 class="font-medium capitalize text-lg">Money Rturns</h4>
                     <p class="text-gray-500 text-sm">30 days money returs</p>
                 </div>
             </div>
             <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
-                <img src="assets/images/icons/service-hours.svg" alt="Delivery" class="w-12 h-12 object-contain">
+                <img src="assets/icons/service-hours.svg" alt="Delivery" class="w-12 h-12 object-contain">
                 <div>
                     <h4 class="font-medium capitalize text-lg">24/7 Support</h4>
                     <p class="text-gray-500 text-sm">Customer support</p>
@@ -160,34 +160,34 @@
         <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">shop by category</h2>
         <div class="grid grid-cols-3 gap-3">
             <div class="relative rounded-sm overflow-hidden group">
-                <img src="assets/images/category/category-1.jpg" alt="category 1" class="w-full">
+                <img src="/images/category/category-1.jpg" alt="category 1" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Bedroom</a>
             </div>
             <div class="relative rounded-sm overflow-hidden group">
-                <img src="assets/images/category/category-2.jpg" alt="category 1" class="w-full">
+                <img src="/images/category/category-2.jpg" alt="category 1" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Mattrass</a>
             </div>
             <div class="relative rounded-sm overflow-hidden group">
-                <img src="assets/images/category/category-3.jpg" alt="category 1" class="w-full">
+                <img src="/images/category/category-3.jpg" alt="category 1" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Outdoor
                 </a>
             </div>
             <div class="relative rounded-sm overflow-hidden group">
-                <img src="assets/images/category/category-4.jpg" alt="category 1" class="w-full">
+                <img src="/images/category/category-4.jpg" alt="category 1" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Sofa</a>
             </div>
             <div class="relative rounded-sm overflow-hidden group">
-                <img src="assets/images/category/category-5.jpg" alt="category 1" class="w-full">
+                <img src="/images/category/category-5.jpg" alt="category 1" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Living
                     Room</a>
             </div>
             <div class="relative rounded-sm overflow-hidden group">
-                <img src="assets/images/category/category-6.jpg" alt="category 1" class="w-full">
+                <img src="/images/category/category-6.jpg" alt="category 1" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">Kitchen</a>
             </div>
