@@ -59,7 +59,7 @@
     <!-- ./header -->
 
     <!-- navbar -->
-    <!-- <nav class="bg-gray-800">
+    <nav class="bg-gray-800">
         <div class="container flex">
             <div class="px-8 py-4 bg-primary md:flex items-center cursor-pointer relative group hidden">
                 <span class="text-white">
@@ -67,7 +67,7 @@
                 </span>
                 <span class="capitalize ml-2 text-white hidden">All Categories</span>
 
-                <!- - dropdown - ->
+                <!-- dropdown -->
                 <div
                     class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
@@ -107,7 +107,7 @@
                 <a href="pages/login.html" class="text-gray-200 hover:text-white transition">Login</a>
             </div>
         </div>
-    </nav> -->
+    </nav>
     <!-- ./navbar -->
 
     <!-- banner -->
