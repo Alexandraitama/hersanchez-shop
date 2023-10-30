@@ -1,4 +1,8 @@
-# Nuxt 3 Minimal Starter
+#tienda virtual para la universidad
+
+Este es un sitio web de compra y venta de carros, casa y departamentos, como tambien permite buscar de forma facil un producto ya sea cualquier marca de carro como tambien cualquier tipo de inmuebles.
+
+# Instrucciones para correr el proyecto
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
