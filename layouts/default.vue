@@ -5,7 +5,7 @@
     <header class="py-4 shadow-sm bg-white">
         <div class="container flex items-center justify-between">
             <a href="index.html">
-                <img src="images/logo.png" alt="Logo" class="w-32">
+                <img src="images/logo.svg" alt="Logo" class="w-32">
             </a>
 
             <div class="w-full max-w-xl relative flex">
@@ -62,27 +62,27 @@
                 <div
                     class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/icons/sofa.svg" alt="sofa" class="w-5 h-5 object-contain">
+                        <img src="/icons/sofa.svg" alt="sofa" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Sofa</span>
                     </a>
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/icons/terrace.svg" alt="terrace" class="w-5 h-5 object-contain">
+                        <img src="/icons/terrace.svg" alt="terrace" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Terarce</span>
                     </a>
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/icons/bed.svg" alt="bed" class="w-5 h-5 object-contain">
+                        <img src="/icons/bed.svg" alt="bed" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Bed</span>
                     </a>
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/icons/office.svg" alt="office" class="w-5 h-5 object-contain">
+                        <img src="/icons/office.svg" alt="office" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">office</span>
                     </a>
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/icons/outdoor-cafe.svg" alt="outdoor" class="w-5 h-5 object-contain">
+                        <img src="/icons/outdoor-cafe.svg" alt="outdoor" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
                     </a>
                     <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
-                        <img src="assets/icons/bed-2.svg" alt="Mattress" class="w-5 h-5 object-contain">
+                        <img src="/icons/bed-2.svg" alt="Mattress" class="w-5 h-5 object-contain">
                         <span class="ml-6 text-gray-600 text-sm">Mattress</span>
                     </a>
                 </div>
