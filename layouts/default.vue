@@ -1,17 +1,8 @@
 <script lang="ts" setup></script>
 
 <template>
-  <!-- <header class="">
-    <h1 class="">Bienvenidos a Hersanchez shop!</h1>
-    <h6 class="">La tienda que te entiende!</h6>
-  </header>
-  <div>
-    Layout: default
-    <slot />
-  </div> -->
-
-      <!-- header -->
-      <header class="py-4 shadow-sm bg-white">
+    <!-- header -->
+    <header class="py-4 shadow-sm bg-white">
         <div class="container flex items-center justify-between">
             <a href="index.html">
                 <img src="images/logo.png" alt="Logo" class="w-32">
