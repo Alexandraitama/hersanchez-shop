@@ -9,8 +9,8 @@
       <p>Somos la mejor opción para la adquisición de productos online <br>
         Tenemos las mejores opciones de productos nuevos y usados</p>
       <div class="mt-12">
-        <a href="#" class="bg-red-500 border border-primary text-white px-8 py-3 font-medium 
-                      rounded-md hover:bg-transparent hover:text-primary">Comprar</a>
+        <nuxt-link  to="/categorias" class="bg-red-500 border border-primary text-white px-8 py-3 font-medium 
+                      rounded-md hover:bg-transparent hover:text-primary">Comprar</nuxt-link>
       </div>
     </div>
 </div>
