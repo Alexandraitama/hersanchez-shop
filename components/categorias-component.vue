@@ -13,7 +13,7 @@ const { data, pending, error, refresh } = await useFetch(`/api/categorias`, {
       <div v-for="categoria in data?.categorias" class="relative rounded-sm overflow-hidden group"
         :key="categoria.nombre">
         <img :src="`/images/category/category-${categoria.id}.jpg`" alt="category 1" class="w-full">
-        <nuxt-link :to="`/publicaciones/${categoria.id}`" 
+        <nuxt-link :to="`/categorias/${categoria.id}`" 
           class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">{{
             categoria.nombre }}</nuxt-link>
       </div>
