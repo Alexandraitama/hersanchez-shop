@@ -15,7 +15,7 @@ const { data, pending, error, refresh } = await useFetch(`/api/publicaciones/${c
 </script>
 
 <template>
-  <div class="container py-16">
+  <div class="container py-8">
     <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">Publicaciones</h2>
     <div v-if="!pending && data?.publicaciones?.length === 0">
       <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">No hay elementos en esta categoría</h2>  

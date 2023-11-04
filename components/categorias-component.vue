@@ -7,7 +7,7 @@ const { data, pending, error, refresh } = await useFetch(`/api/categorias`, {
 </script>
 
 <template>
-  <div class="container py-16">
+  <div class="container py-8">
     <h2 class="text-2xl font-medium text-gray-800 uppercase mb-6">Categorías</h2>
     <div class="grid grid-cols-3 gap-3">
       <div v-for="categoria in data?.categorias" class="relative rounded-sm overflow-hidden group"

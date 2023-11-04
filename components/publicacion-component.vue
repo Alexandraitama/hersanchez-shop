@@ -12,7 +12,7 @@ const { data, pending, error, refresh } = await useFetch(`/api/publicaciones/det
 })
 </script>
 <template>
-  <div class="container grid grid-cols-2 gap-6">
+  <div class="container grid grid-cols-2 gap-6 py-8">
   <!-- <div>publicación: {{ data }}</div> -->
   <div>
       <img src="/images/products/product1.jpg" alt="product" class="w-full">
