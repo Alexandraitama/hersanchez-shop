@@ -1,3 +1,7 @@
+<script setup>
+const carritoStore = useCarritoStore();
+
+</script>
 <template>
   <header class="py-4 shadow-sm bg-white">
     <div class="container flex items-center justify-between">
@@ -22,9 +26,9 @@
             <font-awesome-icon icon="fas fa-bag-shopping" />
           </div>
           <div class="text-xs leading-3">Carrito</div>
-          <!-- <div
+          <div v-if="carritoStore.cantidadProductos > 0"
             class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
-            2</div> -->
+            {{ carritoStore.cantidadProductos }}</div>
         </nuxt-link>
         <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
           <div class="text-2xl">
