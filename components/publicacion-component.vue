@@ -134,16 +134,16 @@ const { data, pending, error, refresh } = await useFetch(`/api/publicaciones/det
           </div>
       </div>
 
-      <!-- <div class="mt-6 flex gap-3 border-b border-gray-200 pb-5 pt-5">
+      <div class="mt-6 flex gap-3 border-b border-gray-200 pb-5 pt-5">
           <a href="#"
               class="bg-primary border border-primary text-white px-8 py-2 font-medium rounded uppercase flex items-center gap-2 hover:bg-transparent hover:text-primary transition">
-              <i class="fa-solid fa-bag-shopping"></i> Add to cart
+              <font-awesome-icon icon="fas fa-bag-shopping" /> Agregar al carrito
           </a>
-          <a href="#"
+          <!-- <a href="#"
               class="border border-gray-300 text-gray-600 px-8 py-2 font-medium rounded uppercase flex items-center gap-2 hover:text-primary transition">
               <i class="fa-solid fa-heart"></i> Wishlist
-          </a>
-      </div> -->
+          </a> -->
+      </div>
 
       <!-- <div class="flex gap-3 mt-4">
           <a href="#"
