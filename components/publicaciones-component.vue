@@ -8,7 +8,7 @@ const props = defineProps({
 });
 const { categoria } = props;
 
-const { data, pending, error, refresh } = await useFetch(`/api/publicaciones/${categoria}`, {
+const { data, pending, error, refresh } = await useFetch(`/api/publicaciones?categoria=${categoria}`, {
   // pick: ['title']
 })
 

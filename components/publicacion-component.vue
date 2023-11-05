@@ -7,7 +7,7 @@ const props = defineProps({
 });
 const { publicacion: id } = props;
 
-const { data, pending, error, refresh } = await useFetch(`/api/publicaciones/detalles/${id}`, {
+const { data, pending, error, refresh } = await useFetch(`/api/publicaciones?id=${id}`, {
     // pick: ['title']
 })
 
