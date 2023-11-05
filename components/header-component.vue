@@ -13,22 +13,13 @@
           class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none hidden md:flex"
              placeholder="Buscar">
         <button
-          class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex">Buscar</button>
+          class="bg-primary border border-primary text-white px-8 py-3 rounded-r-md hover:bg-transparent hover:text-primary transition hidden md:flex">Buscar</button>
       </div>
 
     <div class="flex items-center space-x-4">
-      <!-- <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
-                    <div class="text-2xl">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                    <div class="text-xs leading-3">Wishlist</div>
-                    <div
-                        class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
-                                  8</div>
-                          </a> -->
         <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
           <div class="text-2xl">
-            <i class="fa-solid fa-bag-shopping"></i>
+            <font-awesome-icon icon="fas fa-bag-shopping" />
           </div>
           <div class="text-xs leading-3">Carrito</div>
           <div
@@ -37,7 +28,7 @@
         </a>
         <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
           <div class="text-2xl">
-            <i class="fa-regular fa-user"></i>
+            <font-awesome-icon icon="fas fa-user" />
           </div>
           <div class="text-xs leading-3">Cuenta</div>
         </a>
