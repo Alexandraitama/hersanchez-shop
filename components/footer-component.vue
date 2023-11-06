@@ -6,7 +6,7 @@
                         <img src="/images/logo.svg" alt="logo" class="w-30">
                         <div class="mr-2">
                             <p class="text-gray-500">
-                                Tienda de...
+                                Tienda que permite permite realizar sus compras y/o ventas de los productos
                             </p>
                         </div>
                     </div>
