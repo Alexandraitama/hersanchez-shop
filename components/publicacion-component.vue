@@ -49,7 +49,7 @@ const agregarAlCarrito = (producto) => {
             <div class="space-y-2">
                 <p class="text-gray-800 font-semibold space-x-2">
                     <span>Estado: </span>
-                    <span class="text-green-600">{{ data.publicacion.estadoId }}</span>
+                    <span class="text-green-600">{{ data.publicacion.estado.nombre }}</span>
                 </p>
                 
         </div>

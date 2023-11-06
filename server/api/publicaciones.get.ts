@@ -32,7 +32,10 @@ export default defineEventHandler(async (event) => {
       // const publicacion = getRouterParam(event, 'publicacion')
 
       const publicacion = await prisma.publicacion.findFirst({
-        where: { id: Number(params.id) }
+        where: { id: Number(params.id) },
+        include: {
+          estado: true
+        }
       })
 
       // console.log({

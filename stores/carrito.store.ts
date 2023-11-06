@@ -9,8 +9,11 @@ export const useCarritoStore = defineStore('carrito', () => {
   const removerProducto = (producto) => {
     carrito.value.splice(carrito.value.indexOf(producto), 1);
   }
+  const vaciarCarrito = () => {
+    carrito.value = [];
+  }
   const cantidadProductos = computed(() => carrito.value.length);
 
-  return { carrito, agregarProducto, removerProducto, cantidadProductos }
+  return { carrito, agregarProducto, removerProducto, cantidadProductos, vaciarCarrito }
 
 });
