@@ -7,17 +7,6 @@ export default defineEventHandler(async (event) => {
 
   const usuario = await prisma.cliente.findFirst({
     where: { email: body.email, password: body.password},
-      
-    // create: {
-    // create: {
-    //   // id: 1,
-    //   // producto: 'apartamento en la quiracha',
-    //   // descripcion: 'apartamento en la quiracha',
-    //   // categoriaId: 3,
-    //   // estadoId: 1,
-    //   // precio: 12000,
-    //   // vendedorId: 1
-    // },
   })
   return {
     usuario

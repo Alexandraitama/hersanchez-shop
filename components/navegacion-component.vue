@@ -10,6 +10,7 @@
         <div class="flex items-center space-x-6 capitalize">
           <nuxt-link to="/" class="text-gray-200 hover:text-white transition">Inicio</nuxt-link>
           <nuxt-link to="/categorias" class="text-gray-200 hover:text-white transition">Comprar</nuxt-link>
+          <nuxt-link v-if="usuarioStore.estaAutenticado" to="/publicar" class="text-gray-200 hover:text-white transition">Vender</nuxt-link>
           <nuxt-link to="/acerca" class="text-gray-200 hover:text-white transition">Acerca de</nuxt-link>
           <nuxt-link to="/contacto" class="text-gray-200 hover:text-white transition">Contacto</nuxt-link>
         </div>
