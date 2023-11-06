@@ -2,6 +2,7 @@
 import {useRouter } from 'vue-router';
 
 const carritoStore = useCarritoStore();
+const usuarioStore = useUsuarioStore();
 const router = useRouter();
 
 const quitarProducto = (producto) => {
@@ -9,6 +10,9 @@ const quitarProducto = (producto) => {
 }
 
 const procesarCompra = async() => {
+  if(!usuarioStore.estaAutenticado){
+    router.push('/login');
+  }
   const { data, pending, error, refresh } = await useFetch(`/api/publicaciones`, {
     method: 'post',
     body: {
