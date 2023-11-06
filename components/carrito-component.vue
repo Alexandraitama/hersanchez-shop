@@ -18,11 +18,11 @@ const procesarCompra = async () => {
     router.push('/login');
     return;
   }
-  const { data, pending, error, refresh } = await useFetch(`/api/publicaciones`, {
+  const { data, pending, error, refresh } = await useFetch(`/api/publicaciones/vender`, {
     method: 'post',
     body: {
       ids: carritoStore.carrito.map(x => x.id),
-      estadoId: 2
+      estadoId: 1
     }
   })
   alert('Compra realizada con éxito!');
