@@ -5,7 +5,7 @@
     <div>
 
       <h2 class="text-2xl font-medium text-gray-800 uppercase mb-3 text-center">Vision</h2>
-      <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat magni corporis, iste voluptas vitae magnam ab. Necessitatibus adipisci assumenda illum tempora mollitia maxime autem facilis incidunt, atque, iste est cupiditate?</p>
+      <p class="text-gray-600">desarrollar una pagina web que nos permite llevar a cabo </p>
       
     </div>
     <div>
