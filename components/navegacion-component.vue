@@ -1,3 +1,6 @@
+<script setup>
+  const usuarioStore = useUsuarioStore();
+</script>
 <template>
   <nav class="bg-gray-800">
     <div class="container flex">
@@ -10,7 +13,8 @@
           <nuxt-link to="/acerca" class="text-gray-200 hover:text-white transition">Acerca de</nuxt-link>
           <nuxt-link to="/contacto" class="text-gray-200 hover:text-white transition">Contacto</nuxt-link>
         </div>
-        <a href="pages/login.html" class="text-gray-200 hover:text-white transition">Login</a>
+        <button v-if="usuarioStore.estaAutenticado" @click="usuarioStore.logout" class="text-gray-200 hover:text-white transition">Logout</button>
+        <nuxt-link v-else to="/login" class="text-gray-200 hover:text-white transition">Login</nuxt-link>
       </div>
     </div>
   </nav>

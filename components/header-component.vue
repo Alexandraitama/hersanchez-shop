@@ -1,13 +1,16 @@
 <script setup>
+// import { useUsuarioStore } from '~/stores/usuario.store';
+
 const carritoStore = useCarritoStore();
+const usuarioStore = useUsuarioStore();
 
 </script>
 <template>
   <header class="py-4 shadow-sm bg-white">
     <div class="container flex items-center justify-between">
-      <a href="index.html">
+      <nuxt-link to="/">
         <img src="/images/logo.svg" alt="Logo" class="w-32">
-      </a>
+      </nuxt-link>
 
       <div class="w-full max-w-xl relative flex">
         <span class="absolute left-4 top-3 text-lg text-gray-400">
@@ -30,7 +33,7 @@ const carritoStore = useCarritoStore();
             class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
             {{ carritoStore.cantidadProductos }}</div>
         </nuxt-link>
-        <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+        <a v-if="usuarioStore.estaAutenticado" href="#" class="text-center text-gray-700 hover:text-primary transition relative">
           <div class="text-2xl">
             <font-awesome-icon icon="fas fa-user" />
           </div>
