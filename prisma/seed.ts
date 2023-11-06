@@ -63,11 +63,11 @@ async function main() {
         },
       }),
     await prisma.estado.upsert({
-        where: { nombre: 'activo' },
+        where: { nombre: 'disponible' },
         update: {},
         create: {
           id: 2,
-          nombre: 'activo',
+          nombre: 'disponible',
           descripcion: 'publicación activa'
         },
       }),
