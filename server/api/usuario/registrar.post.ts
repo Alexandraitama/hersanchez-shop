@@ -5,9 +5,14 @@ const prisma = new PrismaClient()
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
 
-  const usuario = await prisma.cliente.findFirst({
-    where: { email: body.email, password: body.password},
+  console.log('body: ', body)
+  const usuario = await prisma.cliente.create({
+    data: {
+      ...body
+    }
+    // where: { email: body.email, password: body.password},
       
+    // create: {
     // create: {
     //   // id: 1,
     //   // producto: 'apartamento en la quiracha',

@@ -9,7 +9,7 @@ async function main() {
       where: { login: 'admin' },
       update: {},
       create: {
-        id: 1,
+        // id: 1,
         nombres: 'Maira',
         apellidos: 'Hernandez',
         login: 'admin',
@@ -21,7 +21,7 @@ async function main() {
         where: { login: 'root' },
         update: {},
         create: {
-          id: 2,
+          // id: 2,
           nombres: 'Simon',
           apellidos: 'Sanchez',
           login: 'root',
@@ -33,7 +33,7 @@ async function main() {
       where: { email: 'maira@vercel.com' },
       update: {},
       create: {
-        id: 2,
+        // id: 2,
         nombres: 'Maira',
         apellidos: 'Hernandez',
         email: 'maira@vercel.com',
@@ -45,7 +45,7 @@ async function main() {
       where: { email: 'simon@vercel.com' },
       update: {},
       create: {
-        id: 1,
+        // id: 1,
         nombres: 'Simon',
         apellidos: 'Garcia',
         email: 'simon@vercel.com',
@@ -57,7 +57,7 @@ async function main() {
         where: { nombre: 'pendiente' },
         update: {},
         create: {
-          id: 1,
+          // id: 1,
           nombre: 'pendiente',
           descripcion: 'publicación pendiente por publicar'
         },
@@ -66,7 +66,7 @@ async function main() {
         where: { nombre: 'disponible' },
         update: {},
         create: {
-          id: 2,
+          // id: 2,
           nombre: 'disponible',
           descripcion: 'publicación activa'
         },
@@ -75,7 +75,7 @@ async function main() {
         where: { nombre: 'inactivo' },
         update: {},
         create: {
-          id: 3,
+          // id: 3,
           nombre: 'inactivo',
           descripcion: 'publicación inactiva'
         },
@@ -84,7 +84,7 @@ async function main() {
         where: { nombre: 'eliminado' },
         update: {},
         create: {
-          id: 4,
+          // id: 4,
           nombre: 'eliminado',
           descripcion: 'publicación eliminada'
         },
@@ -93,7 +93,7 @@ async function main() {
         where: { nombre: 'carros' },
         update: {},
         create: {
-          id: 1,
+          // id: 1,
           nombre: 'carros'
         },
       }),
@@ -101,7 +101,7 @@ async function main() {
         where: { nombre: 'casas' },
         update: {},
         create: {
-          id: 2,
+          // id: 2,
           nombre: 'casas'
         },
       }),
@@ -109,7 +109,7 @@ async function main() {
         where: { nombre: 'apartamentos' },
         update: {},
         create: {
-          id: 3,
+          // id: 3,
           nombre: 'apartamentos'
         },
       }),
@@ -117,7 +117,7 @@ async function main() {
         where: { id: 1 },
         update: {},
         create: {
-          id: 1,
+          // id: 1,
           producto: 'apartamento en la quiracha',
           descripcion: 'apartamento en la quiracha',
           categoriaId: 3,
@@ -131,7 +131,7 @@ async function main() {
         where: { id: 2 },
         update: {},
         create: {
-          id: 2,
+          // id: 2,
           producto: 'apartamento en los bloques',
           descripcion: 'apartamento en los bloques',
           categoriaId: 3,
@@ -144,7 +144,7 @@ async function main() {
         where: { id: 3 },
         update: {},
         create: {
-          id: 3,
+          // id: 3,
           producto: 'Renault clio',
           descripcion: 'Renault clio barato',
           categoriaId: 1,
@@ -158,7 +158,7 @@ async function main() {
         where: { id: 4 },
         update: {},
         create: {
-          id: 4,
+          // id: 4,
           producto: 'Fiat Uno',
           descripcion: 'Fiat Uno',
           categoriaId: 1,

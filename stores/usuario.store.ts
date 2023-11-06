@@ -8,7 +8,7 @@ export const useUsuarioStore = defineStore('usuario', () => {
 
   const login = async (login: String, password: String) => {
     // verificar base de datos
-    const { data, pending, error, refresh } = await useFetch(`/api/usuario`, {
+    const { data, pending, error, refresh } = await useFetch(`/api/usuario/autenticar`, {
       method: 'post',
       body: {
         email: login,
@@ -25,6 +25,27 @@ export const useUsuarioStore = defineStore('usuario', () => {
     }
 
   }
+  const registrar = async (login: String, password: String, nombres: String, apellidos: String) => {
+    // verificar base de datos
+    const { data, pending, error, refresh } = await useFetch(`/api/usuario/registrar`, {
+      method: 'post',
+      body: {
+        email: login,
+        nombres,
+        apellidos,
+        password
+      }
+      // pick: ['title']
+    })
+
+    if (Object.keys(data).length !== 0) {
+      console.log('usuario: ', data)
+      datos.value = { ...data }
+      autenticado.value = true;
+      router.push('/login')
+    }
+
+  }
 
   const logout = () => {
     autenticado.value = false;
@@ -33,6 +54,6 @@ export const useUsuarioStore = defineStore('usuario', () => {
   }
   const estaAutenticado = computed(() => autenticado.value);
 
-  return { autenticado, login, logout, estaAutenticado }
+  return { autenticado, login, logout, registrar, estaAutenticado }
 
 });
