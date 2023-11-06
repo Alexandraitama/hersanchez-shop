@@ -17,7 +17,7 @@
                             <nuxt-link to="/acerca" class="text-base text-gray-500 hover:text-gray-900 block">Acerca De</nuxt-link>
                             <!-- <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Documentation</a> -->
                             <nuxt-link to="/contacto" class="text-base text-gray-500 hover:text-gray-900 block">Contacto</nuxt-link>
-                            <a href="#" class="text-base text-gray-500 hover:text-gray-900 block">Ayuda</a>
+                            <a href="/uploads/manual.pdf" class="text-base text-gray-500 hover:text-gray-900 block">Ayuda</a>
                         </div>
                     </div>
                 </div>
