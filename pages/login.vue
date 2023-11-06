@@ -2,6 +2,11 @@
 const usuarioStore = useUsuarioStore();
 const login = ref('');
 const password = ref('');
+const autenticando = ref(false);
+const autenticar = (login: String, password: String) => {
+  autenticando.value = true;
+  usuarioStore.login(login, password);
+}
 </script>
 
 <template>
@@ -11,7 +16,7 @@ const password = ref('');
       <p class="text-gray-600 mb-6 text-sm">
         Bienvenido de nuevo!
       </p>
-      <form autocomplete="off" @submit.prevent="usuarioStore.login(login, password)">
+      <form autocomplete="off"  @submit.prevent="autenticar(login, password)">
         <div class="space-y-2">
           <div>
             <label for="email" class="text-gray-600 mb-2 block">Email</label>
@@ -35,8 +40,12 @@ const password = ref('');
           <a href="#" class="text-primary">Forgot password</a>
         </div> -->
         <div class="mt-4">
-          <button type="submit"
-            class="block w-full py-2 text-center text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">Login</button>
+          
+          <button type="submit" 
+            class="block w-full py-2 text-center text-white bg-primary border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium loading"> 
+            <font-awesome-icon v-if="autenticando" icon="fa fa-spinner" spin/>
+            <span v-else>Login</span>
+          </button>
         </div>
       </form>
 
