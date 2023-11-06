@@ -23,7 +23,7 @@ const { data, pending, error, refresh } = await useFetch(`/api/publicaciones?cat
     <div v-else class="grid grid-cols-3 gap-3">
       <div v-for="publicacion in data?.publicaciones" class="relative rounded-sm overflow-hidden group"
         :key="publicacion.producto">
-        <img :src="`/images/category/category-${publicacion.id}.jpg`" alt="category 1" class="w-full">
+        <img :src="`/images/category/category-${Math.round(Math.random()*6+1)}.jpg`" alt="category 1" class="w-full">
         <nuxt-link :to="`/publicaciones/${publicacion.id}`"
           class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center text-xl text-white font-roboto font-medium group-hover:bg-opacity-60 transition">{{
             publicacion.producto }}</nuxt-link>
