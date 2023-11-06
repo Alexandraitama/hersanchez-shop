@@ -1,16 +1,9 @@
 <script lang="ts" setup>
-// const props = defineProps({
-//   categoria: {
-//     type: Number,
-//     required: true,
-//   },
-// });
-// const { categoria } = props;
-const categoria = 1;
+const carritoStore = useCarritoStore();
 
-const { data, pending, error, refresh } = await useFetch(`/api/publicaciones/${categoria}`, {
-  // pick: ['title']
-})
+const quitarProducto = (producto) => {
+  carritoStore.removerProducto(producto);
+}
 </script>
 
 <template>
@@ -27,12 +20,15 @@ const { data, pending, error, refresh } = await useFetch(`/api/publicaciones/${c
           <h4 class="text-gray-800 font-medium">Usuario!</h4>
         </div>
       </div>
+      <!-- <div class="px-4 py-3 shadow flex items-center gap-4">
+        {{ carritoStore.carrito }}
+      </div> -->
     </div>
     <!-- ./sidebar -->
 
     <!-- wishlist -->
     <div class="col-span-9 space-y-4">
-      <div v-for="publicacion in data?.publicaciones " class="flex items-center justify-between border gap-6 p-4 border-gray-200 rounded">
+      <div v-for="publicacion in carritoStore.carrito " class="flex items-center justify-between border gap-6 p-4 border-gray-200 rounded">
         <div class="w-28">
           <img src="/images/products/product6.jpg" alt="product 6" class="w-full">
         </div>
@@ -41,7 +37,7 @@ const { data, pending, error, refresh } = await useFetch(`/api/publicaciones/${c
           <p class="text-gray-500 text-sm">Disponibilidad: <span class="text-green-600">Disponible</span></p>
         </div>
         <div class="text-primary text-lg font-semibold">${{ publicacion.precio }}</div>
-        <div class="px-6 py-2 text-center text-gray-700 hover:text-primary transition relative border border-secondary hover:border-primary rounded cursor-pointer">
+        <div @click="quitarProducto(publicacion)" class="px-6 py-2 text-center text-gray-700 hover:text-primary transition relative border border-secondary hover:border-primary rounded cursor-pointer">
           <font-awesome-icon icon="fas fa-trash" /> Quitar
         </div>
       </div>

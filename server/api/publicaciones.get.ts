@@ -31,7 +31,7 @@ export default defineEventHandler(async (event) => {
 
       // const publicacion = getRouterParam(event, 'publicacion')
 
-      const detalles = await prisma.publicacion.findFirst({
+      const publicacion = await prisma.publicacion.findFirst({
         where: { id: Number(params.id) }
       })
 
@@ -41,7 +41,33 @@ export default defineEventHandler(async (event) => {
       // })
 
       return {
-        detalles
+        publicacion
+      };
+
+    } catch (error) {
+      console.error(error)
+    }
+  } else if ("ids" in params) {
+    try {
+
+      // const publicacion = getRouterParam(event, 'publicacion')
+      console.log({ids: params.ids})
+      let ids = [];
+      if(params.ids.length > 0){
+        
+         ids = params.ids.split(',').map(x => parseInt(x));
+      }
+      const publicaciones = await prisma.publicacion.findMany({
+        where: { id: { in: ids } }
+      })
+
+      // console.log({
+      //   categoria,
+      //   publicaciones
+      // })
+
+      return {
+        publicaciones
       };
 
     } catch (error) {
