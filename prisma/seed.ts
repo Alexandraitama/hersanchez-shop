@@ -141,7 +141,7 @@ async function main() {
         },
       }),
       await prisma.publicacion.upsert({
-        where: { id: 3 },
+        where: { id: 2 },
         update: {},
         create: {
           // id: 3,
