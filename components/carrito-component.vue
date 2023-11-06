@@ -1,25 +1,31 @@
 <script lang="ts" setup>
-import {useRouter } from 'vue-router';
+import { useRouter } from 'vue-router';
 
 const carritoStore = useCarritoStore();
 const usuarioStore = useUsuarioStore();
 const router = useRouter();
 
+const procesando = ref(false);
+
 const quitarProducto = (producto) => {
   carritoStore.removerProducto(producto);
 }
 
-const procesarCompra = async() => {
-  if(!usuarioStore.estaAutenticado){
+const procesarCompra = async () => {
+
+  procesando.value = true;
+  if (!usuarioStore.estaAutenticado) {
     router.push('/login');
+    return;
   }
   const { data, pending, error, refresh } = await useFetch(`/api/publicaciones`, {
     method: 'post',
     body: {
       ids: carritoStore.carrito.map(x => x.id),
-      estadoId: 1
+      estadoId: 2
     }
-})
+  })
+  alert('Compra realizada con éxito!');
   carritoStore.vaciarCarrito();
   router.push('/');
 
@@ -33,21 +39,22 @@ const procesarCompra = async() => {
     <div class="col-span-3">
       <div class="px-4 py-3 shadow flex items-center gap-4">
         <div class="flex-shrink-0">
-        <font-awesome-icon icon="fas fa-user" size="xl" />
-      </div>
+          <font-awesome-icon icon="fas fa-user" size="xl" />
+        </div>
         <div class="flex-grow">
           <p class="text-gray-600">Hola,</p>
           <h4 class="text-gray-800 font-medium">Usuario!</h4>
         </div>
       </div>
       <!-- <div class="px-4 py-3 shadow flex items-center gap-4">
-          {{ carritoStore.carrito }}
-        </div> -->
+            {{ carritoStore.carrito }}
+          </div> -->
       <div class="px-4 py-3 shadow flex items-center gap-4">
-        <button
-          @click="procesarCompra"
-          class="bg-primary border border-primary text-white px-8 py-2 font-medium rounded uppercase flex items-center gap-2 hover:bg-transparent hover:text-primary transition">
-          <font-awesome-icon icon="fas fa-check" /> Procesar Compra
+        <button @click="procesarCompra"
+          class="bg-primary border border-primary text-white px-8 py-2 font-medium rounded uppercase flex items-center gap-2 hover:bg-transparent hover:text-primary transition w-full text-center justify-center">
+          <font-awesome-icon v-if="procesando" icon="fa fa-spinner" spin />
+          <span v-else>
+            <font-awesome-icon icon="fas fa-check" /> Procesar Compra</span>
         </button>
       </div>
     </div>
@@ -65,7 +72,8 @@ const procesarCompra = async() => {
         </div>
         <div class="w-1/3">
           <h2 class="text-gray-800 text-xl font-medium uppercase">{{ publicacion.producto }}</h2>
-          <p class="text-gray-500 text-sm">Disponibilidad: <span class="text-green-600">{{ publicacion.estado.nombre }}</span></p>
+          <p class="text-gray-500 text-sm">Disponibilidad: <span class="text-green-600">{{ publicacion.estado.nombre
+          }}</span></p>
         </div>
         <div class="text-primary text-lg font-semibold">${{ publicacion.precio }}</div>
         <div @click="quitarProducto(publicacion)"
