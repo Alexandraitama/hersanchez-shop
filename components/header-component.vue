@@ -33,12 +33,12 @@ const usuarioStore = useUsuarioStore();
             class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
             {{ carritoStore.cantidadProductos }}</div>
         </nuxt-link>
-        <a v-if="usuarioStore.estaAutenticado" href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+        <nuxt-link v-if="usuarioStore.estaAutenticado" to="/perfil" class="text-center text-gray-700 hover:text-primary transition relative">
           <div class="text-2xl">
             <font-awesome-icon icon="fas fa-user" />
           </div>
           <div class="text-xs leading-3">Cuenta</div>
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </header>
